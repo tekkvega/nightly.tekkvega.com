@@ -7,10 +7,10 @@ document.getElementById('form')
    btn.value = 'Sending...';
 
    const serviceID = 'default_service';
-   const templateID = process.env.EMAIL_TOKEN;
+   const dn = 'deeznuts';
 
 
-   emailjs.sendForm(serviceID, templateID, this)
+   emailjs.sendForm(serviceID, dn, this)
     .then(() => {
       btn.value = 'Send Email';
       alert('Sent!');
